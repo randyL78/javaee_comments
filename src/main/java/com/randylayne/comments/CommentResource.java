@@ -1,6 +1,7 @@
 package com.randylayne.comments;
 
 import com.randylayne.eventhandler.EventBusService;
+import com.randylayne.eventhandler.NodeEventBusService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
@@ -26,7 +27,7 @@ public class CommentResource {
     comment.setUuid(UUID.randomUUID());
     comment.setPostUUID(postUUID);
     CommentRepository.createComment(comment);
-    bus.sendEvent(new CommentEvent(comment));
+    bus.sendEvent(CommentEvent.buildCommentCreated(comment));
     return Response.created(URI.create(uriInfo.getPath() + comment.getUuid())).entity(comment).build();
   }
 }

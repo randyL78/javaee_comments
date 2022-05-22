@@ -1,23 +1,24 @@
 package com.randylayne.eventhandler;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Event {
+  private static ObjectMapper mapper = new ObjectMapper();
   private String type;
-  private UUID typeUUID;
-  private Map<String, String> content;
+  private Object data;
 
   public Event() {
-    content = new HashMap<>();
-  }
-  public Event(String type, UUID typeUUID) {
-    this.type = type;
-    this.typeUUID = typeUUID;
-    content = new HashMap<>();
   }
 
+  public Event(String type) {
+    this.type = type;
+  }
+
+  public Event(String type, Object data) {
+    this.type = type;
+    this.data = data;
+  }
   public String getType() {
     return type;
   }
@@ -26,23 +27,20 @@ public class Event {
     this.type = type;
   }
 
-  public UUID getTypeUUID() {
-    return typeUUID;
+  public Object getData() {
+    return data;
   }
 
-  public void setTypeUUID(UUID typeUUID) {
-    this.typeUUID = typeUUID;
+  public void setData(Object data) {
+    this.data = data;
   }
 
-  public Map<String, String> getContent() {
-    return content;
-  }
-
-  public void setContent(Map<String, String> content) {
-    this.content = content;
-  }
-
-  public void addContentItem(String key, String value) {
-    content.put(key, value);
+  @Override
+  public String toString() {
+    try {
+      return mapper.writeValueAsString(this);
+    } catch (JsonProcessingException e) {
+      throw new RuntimeException(e);
+    }
   }
 }
