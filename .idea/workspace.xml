@@ -10,11 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc0ee41-895b-44aa-9917-a4929c5b339e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/resources/EventResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/CommentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/CommentResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randylayne/eventhandler/EventBusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randylayne/eventhandler/EventBusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/CommentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/CommentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/CommentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/CommentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randylayne/comments/resources/CommentResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/randylayne/eventhandler/NodeEventBusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randylayne/eventhandler/NodeEventBusService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,11 +55,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/randy/personal/java_learning/blog/comments/src/main/resources",
+    "last_opened_file_path": "/home/randy/personal/java_learning/blog/posts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -154,7 +155,10 @@
       <workItem from="1653007192918" duration="1000" />
       <workItem from="1653007327830" duration="4049000" />
       <workItem from="1653094751231" duration="2199000" />
-      <workItem from="1653153280655" duration="14415000" />
+      <workItem from="1653153280655" duration="17377000" />
+      <workItem from="1653252607967" duration="3451000" />
+      <workItem from="1653866304067" duration="1074000" />
+      <workItem from="1654465900523" duration="910000" />
     </task>
     <servers />
   </component>
@@ -171,5 +175,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

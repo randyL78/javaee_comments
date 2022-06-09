@@ -29,7 +29,7 @@ public class NodeEventBusService implements EventBusService {
         outputStream.close();
         con.connect();
 
-        if(con.getResponseCode() > 299) {
+        if (con.getResponseCode() > 299) {
           throw new IOException("Event failed to send with status " + con.getResponseCode());
         }
       } catch (MalformedURLException e) {
@@ -44,5 +44,6 @@ public class NodeEventBusService implements EventBusService {
   @Override
   public void asyncSend(Event event) {
     Thread thread = new Thread(() -> send(event));
+    thread.start();
   }
 }
